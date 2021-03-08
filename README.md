@@ -40,25 +40,56 @@ Mobile view of application
 ![Marvel_wireframe_mobile](https://media.git.generalassemb.ly/user/34504/files/99e34e00-8003-11eb-8f0f-ebb2946c7a66)
 
 
-MVP:  1. Project will be built fully with HTML, CSS, and JavaScript.
-      2. I will style the project layout using both flexbox and grid to display content in an organized way.
-      3. I will make API requests to Marvel's official server using Axios to pull character data.
-      4. Project will have individual layouts for both desktop and mobile view to display search results.
-      5. Results will include character details that shows description of character and grid of comics that the character appears in.
-      6. I will add hover effects to comics after results populate.
+| MVP | Goals                                                                                                                           |
+|-----|---------------------------------------------------------------------------------------------------------------------------------|
+| 1   | Project will be built fully with HTML, CSS, and JavaScript.                                                                     |
+| 2   | I will style the project layout using both flexbox and grid to display content in an organized way.                          \| |
+| 3   | I will make API requests to Marvel's official server using Axios to pull character data.                                        |
+| 4   | Project will have individual layouts for both desktop and mobile view to display search results.                                |
+| 5   | Results will include character details that shows description of character and grid of comics that the character appears in.    |
+| 6   | I will add hover effects to comics after results populate.                                                                      |                                                                  |
 
-Post-MVP: 1. I would like to add the ability to click each comic and display additional details like other characters who also appear in the selected comic.
-          2. Add the ability to show list of movie along with movie trailers for the selected characters.
-          3. Implement more design details to input fields and buttons on the page.
-          
+| Post-MVP | Goals                                                                                                                                           |
+|----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1        | I would like to add the ability to click each comic and display additional details like other characters who also appear in the selected comic. |
+| 2        | Add the ability to show list of movie along with movie trailers for the selected characters.                                                    |
+| 3        | Implement more design details to input fields and buttons on the page.                                                                          |
 
-Goals:  | Day             | Goal          | 
-        | :-------------: |:-------------:| 
-        | Monday          | right-aligned | 
-        | Tuesday         | centered      | 
-        | Wednesday       | are neat      |  
-        | Thursday        | right-aligned | 
-        | Friday          | centered      | 
 
-Priority Matrix: A graph of your intended areas of development (Pseudocoding, Design, HTML, CSS, JavaScript, Testing, etc) plotted on an X/Y axis where X represents time to completion and Y represents priority. Use a professional tool or upload a well drawn image using an image hosting site such as Cloudinary or a similar hosting service.
-Timeframes: How long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day. Components should be broken down into a maximum of 3 hours time blocks.
+Goals:  
+| Day            | Goal                                                                            |
+|----------------|---------------------------------------------------------------------------------|
+| Monday 3/8     | Finish README and start with HTML/CSS.                                          |
+| Tuesday 3/9    | Start working on my JavaScript and make sure all fields/buttons are functional. |
+| Wednesday 3/10 | Complete my JavaScript and make sure the application is functional.             |
+| Thursday 3/11  | Testing / tweaks to my CSS. Look into post-MVP goals.                           |
+| Friday 3/12    | Presentation Day.                                                               |
+
+Priority Matrix: 
+
+
+Timeframes:
+|            | Development Task    | Expected time | Actual time |
+|------------|---------------------|---------------|-------------|
+| Day 1      | HTML                | 2 hours       |             |
+|            | CSS                 | 2 hours       |             |
+|            | JavaScript          | 3 hours       |             |
+|            |                     |               |             |
+| Day 2      | HTML                | 2 hours       |             |
+|            | JavaScript          | 3 hours       |             |
+|            | CSS                 | 2 hours       |             |
+|            | Javascript          | 3 hours       |             |
+|            |                     |               |             |
+| Day 3      | JavaScript          | 3 hours       |             |
+|            | CSS                 | 3 hours       |             |
+|            | HTML                | 1 hour        |             |
+|            | JavaScript          | 3 hours       |             |
+|            |                     |               |             |
+| Day 4      | HTML                | 1 hour        |             |
+|            | CSS                 | 2 hours       |             |
+|            | JavaScript          | 3 hours       |             |
+|            | CSS                 | 3 hours       |             |
+|            | Testing             | 2 hours       |             |
+|            |                     |               |             |
+| Day 5      | Present application |               |             |
+| Total Time |                     | 38 hours      |             |
