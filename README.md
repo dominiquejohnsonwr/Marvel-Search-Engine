@@ -66,6 +66,7 @@ Goals:
 | Friday 3/12    | Presentation Day.                                                               |
 
 Priority Matrix: 
+![295E7CC1-92D3-4018-B0F6-44C63183749F](https://media.git.generalassemb.ly/user/34504/files/1df00280-8011-11eb-8955-9a0fcc1ab315)
 
 
 Timeframes:
