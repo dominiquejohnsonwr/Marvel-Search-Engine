@@ -43,17 +43,20 @@
 | MVP | Goals                                                                                                                           |
 |-----|---------------------------------------------------------------------------------------------------------------------------------|
 | 1   | Project will be built fully with HTML, CSS, and JavaScript.                                                                     |
-| 2   | I will style the project layout using both flexbox and grid to display content in an organized way.                          \| |
+| 2   | I will style the project layout using both flexbox and grid to display content in an organized way.                             |
 | 3   | I will make API requests to Marvel's official server using Axios to pull character data.                                        |
 | 4   | Project will have individual layouts for both desktop and mobile view to display search results.                                |
 | 5   | Results will include character details that shows description of character and grid of comics that the character appears in.    |
-| 6   | I will add hover effects to comics after results populate.                                                                      |                                                                  |
+| 6   | Return search results for first character in response.                                                                          |
+                                                                                                                                       
 
 | Post-MVP | Goals                                                                                                                                           |
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1        | I would like to add the ability to click each comic and display additional details like other characters who also appear in the selected comic. |
 | 2        | Add the ability to show list of movie along with movie trailers for the selected characters.                                                    |
 | 3        | Implement more design details to input fields and buttons on the page.                                                                          |
+| 4        | I would like to add hover effects to comics after results populate.                                                                             |
+| 5        | Add dropdown to include the extra search results for name searched.  
 
 
 #### Goals:  
