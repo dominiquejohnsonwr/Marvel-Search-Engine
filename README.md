@@ -31,9 +31,13 @@ API Snippet: https://gateway.marvel.com/v1/public/characters?ts={{ts}}&name=hulk
 
 ```
 
-Wireframes: The proposed layout and design of your app. Create mockups for your views. If your are creating multiple views including both desktop and mobile formats, and consider whether or not you need to account for landscape and portrait orientations. Please use a digital tool to complete your wireframe.
+Wireframes: 
 
-![alt text](https://ibb.co/KXBXh2p)
+Desktop view of application
+![Marvel_wireframe_desktop](https://media.git.generalassemb.ly/user/34504/files/96e85d80-8003-11eb-9992-e9b4c584dc68)
+
+Mobile view of application
+![Marvel_wireframe_mobile](https://media.git.generalassemb.ly/user/34504/files/99e34e00-8003-11eb-8f0f-ebb2946c7a66)
 
 
 MVP:  1. Project will be built fully with HTML, CSS, and JavaScript.
