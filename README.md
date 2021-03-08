@@ -1,4 +1,4 @@
-App Title: Marvel Character Lookup
+App Title: Marvel Character Lookup Tool
 
 App Description: An application that allows you to search and view detailed information about any character from the Marvel Comics Universe.
 
