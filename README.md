@@ -1,10 +1,10 @@
-App Title: Marvel Character Lookup Tool
+# App Title: Marvel Character Lookup Tool
 
-App Description: An application that allows you to search and view detailed information about any character from the Marvel Comics Universe.
+### An application that allows you to search and view detailed information about any character from the Marvel Comics Universe.
 
-API: I am using the Marvel Deveoper Portal API and I plan to use character details, thumbnail images, and comic book collections for each character.
+#### API: I am using the Marvel Deveoper Portal API and I plan to use character details, thumbnail images, and comic book collections for each character.
 
-API Snippet: https://gateway.marvel.com/v1/public/characters?ts={{ts}}&name=hulk&apikey={{apikey}}&hash={{hash}}
+#### API Snippet: https://gateway.marvel.com/v1/public/characters?ts={{ts}}&name=hulk&apikey={{apikey}}&hash={{hash}}
 
 ```{
     "code": 200,
@@ -31,12 +31,12 @@ API Snippet: https://gateway.marvel.com/v1/public/characters?ts={{ts}}&name=hulk
 
 ```
 
-Wireframes: 
+### Wireframes: 
 
-Desktop view of application
+### Desktop view of application
 ![Marvel_wireframe_desktop](https://media.git.generalassemb.ly/user/34504/files/96e85d80-8003-11eb-9992-e9b4c584dc68)
 
-Mobile view of application
+### Mobile view of application
 ![Marvel_wireframe_mobile](https://media.git.generalassemb.ly/user/34504/files/99e34e00-8003-11eb-8f0f-ebb2946c7a66)
 
 
@@ -56,7 +56,7 @@ Mobile view of application
 | 3        | Implement more design details to input fields and buttons on the page.                                                                          |
 
 
-Goals:  
+#### Goals:  
 | Day            | Goal                                                                            |
 |----------------|---------------------------------------------------------------------------------|
 | Monday 3/8     | Finish README and start with HTML/CSS.                                          |
@@ -65,11 +65,11 @@ Goals:
 | Thursday 3/11  | Testing / tweaks to my CSS. Look into post-MVP goals.                           |
 | Friday 3/12    | Presentation Day.                                                               |
 
-Priority Matrix: 
+#### Priority Matrix: 
 ![295E7CC1-92D3-4018-B0F6-44C63183749F](https://media.git.generalassemb.ly/user/34504/files/1df00280-8011-11eb-8955-9a0fcc1ab315)
 
 
-Timeframes:
+#### Timeframes:
 |            | Development Task    | Expected time | Actual time |
 |------------|---------------------|---------------|-------------|
 | Day 1      | HTML                | 2 hours       |             |
