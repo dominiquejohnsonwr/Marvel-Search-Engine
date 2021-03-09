@@ -4,9 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Find Your Superhero!</title>
+  <script defer src="./script.js"></script>
+  <link rel="stylesheet" href="./style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Marvel Super-hero Library</h1>
+  </div>
+</div>
+
+  <title>Find Your Super-hero!</title>
+
 </head>
 <body>
-  
+  <div class="mainLogo">
+    <img src="./marvel-logo-header.jpeg">
+  </div>
+  <div class="search-section">
+    <form id="movie-form">
+      <input type="form" id="blank" placeholder="Find your hero here...">
+    </form>
+      <button id="search">Search</button>
+  </div>
 </body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </html>

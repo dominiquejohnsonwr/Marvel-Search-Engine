@@ -1,0 +1,63 @@
+* {
+  font-family: 'Bangers', cursive;
+  
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./marvel-fresh-start-banner.jpeg");
+  height: 400px;
+  width: 100%;
+  
+}
+
+body {
+  background-color: #000000;
+  text-align: center;
+  height: 100%;
+}
+
+.hero-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+h1 {
+  font-size: 50px;
+  color: white;
+  margin: 0 auto;
+  
+}
+
+.mainLogo {
+  max-width: 100%;
+
+}
+
+.mainLogo img {
+  margin: 30px auto 0;
+  display:inline-block;
+  width: 500px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+}
+
+#blank {
+  font-size: 22px;
+  width: 400px;
+  height: 50px;
+  border: 2px solid #ED1D24;
+  border-radius: 3px;
+  margin: 40px auto;
+}
+
+#search {
+  font-size: 30px;
+  width: 150px;
+  height: 45px;
+  background-color: #ED1D24;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+}
