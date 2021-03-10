@@ -4,6 +4,9 @@ const ts = new Date().getTime()
 const message = ts+pvtkey+pubkey;
 const hash = CryptoJS.MD5(message);
 
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 
 const input = document.querySelector('#blank')
 
@@ -74,10 +77,12 @@ async function findHero(event) {
 
 //Displaying comic collection
 
+const divComics = document.querySelector('.hero-comics')
+
 function displayComicCollection(comicThumbnails) {
   let comicImg = document.createElement("img")
   comicImg.src = comicThumbnails
-  div.appendChild(comicImg)
+  divComics.appendChild(comicImg)
 }
 
 function getComicCollection(results) {
