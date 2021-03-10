@@ -91,10 +91,16 @@ function getComicCollection(results) {
   }); 
 }
 
-const fullCollection = document.querySelector
+const fullCollectionBtn = document.querySelector('#more-comics')
+
+//added second button to show the full comic collection 
+
+fullCollectionBtn.addEventListener('click', (event) => {
+  findAllHeroComics()
+})
 
 function getFullCollection(allComics) {
-  results.forEach(comic => {
+  results.forEach(allComics => {
   displayComicCollection(`${comic.thumbnail.path}.${comic.thumbnail.extension}`)  
   }); 
 }

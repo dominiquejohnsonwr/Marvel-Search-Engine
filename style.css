@@ -32,8 +32,8 @@ h1 {
 
 .mainLogo img {
   display: inline-block;
-  width: 300px;
-  border: 3px solid #ffffff8c;
+  width: 400px;
+  border: 5px solid #000000d4;
   border-radius: 5px;
 }
 
@@ -43,24 +43,23 @@ h1 {
   font-size: 22px;
   width: 350px;
   height: 45px;
-  border: 2px solid #ed1d24;
+  border: 2px solid #000000;
   border-radius: 5px;
   margin: 30px auto;
 }
 
 #search {
-  font-size: 40px;
+  font-size: 35px;
   width: 150px;
   height: 45px;
-  color: #ffffff;
-  background-color: #ed1d248c;
-  border: 2px solid #ffffff;
+  color: #ffe100d2;
+  background-color: #000000;
+  border: 3px solid #ffe100d2;
   border-radius: 3px;
   transition: .2s ease;
 }
 
 #search:hover {
-  border: 3px solid #918000d2;
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
@@ -76,7 +75,7 @@ h1 {
 }
 
 .hero-list img {
-  border: 5px solid #ed1d248e;
+  border: 5px solid #ffe100d2;
   border-radius: 5px;
   color: #ffffff;
   height: 500px;
@@ -90,6 +89,8 @@ h1 {
   max-width: 800px;
   height: 500px;
   margin: 50px 0 50px 70px;
+  border: 3px solid ffe100d2;
+  border-radius: 6px;
 }
 
 .your-hero p {
@@ -111,9 +112,9 @@ h1 {
 }
 
 .hero-comics img {
-  width: 400px;
-  /* margin: 10px 0 10px 0; */
-  padding: 40px;
+  width: 300px;
+  border: 4px solid #ffe100d2;
+  margin: 10px 30px 30px 30px;
   transition: .2s ease;
 }
 
@@ -136,14 +137,14 @@ h1 {
   height: 75px;
   width: 200px;
   margin-bottom: 15px;
-  background-color: #ed1d248c;
-  border: 2px solid #ffffff;
+  background-color: #000000;
+  color: #ffe100d2;
+  border: 3px solid #ffe100d2;
   border-radius: 3px;
   transition: .2s ease;
 }
 
 #more-comics:hover {
-  border: 3px solid #918000d2;
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
@@ -151,7 +152,7 @@ h1 {
 }
 
 .bottom-nav {
-  background-color: #0e0e0ed2;
+  background-color: #0e0e0e;
   align-items: center;
   text-align: center;
   position: relative;  
@@ -161,7 +162,7 @@ h1 {
 }
 
 .bottom-nav img {
-  border: 3px solid #ed1d248e;
+  border: 3px solid #ffe100d2;
   width: 45px;
   height: 45px;
 }
@@ -174,9 +175,9 @@ h1 {
 
 .attributes a {
   font-size: 30px;
-  color: #2f32ae;
+  color: #ffffff;
 }
 
 .attributes a:hover {
-  color: #ffffffd2;
+  color: #ffe100d2;
 }
