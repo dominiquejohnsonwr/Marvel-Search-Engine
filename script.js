@@ -91,6 +91,14 @@ function getComicCollection(results) {
   }); 
 }
 
+const fullCollection = document.querySelector
+
+function getFullCollection(allComics) {
+  results.forEach(comic => {
+  displayComicCollection(`${comic.thumbnail.path}.${comic.thumbnail.extension}`)  
+  }); 
+}
+
 
 
 async function findHeroComics(characterId) {
