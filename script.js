@@ -1,8 +1,10 @@
 const pubkey = "4f82b7a10e0ace74012143482aebfa7f";
 const pvtkey = "92c3723fcf94b36ea4f8e86b20324f5ece4d1f04";
-const ts = new Date().getTime()
-const message = ts+pvtkey+pubkey;
-const hash = CryptoJS.MD5(message);
+const hash = () => {
+  const ts = new Date().getTime()
+  const message = ts + pvtkey + pubkey;
+  return [CryptoJS.MD5(message), ts];
+}
 
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
@@ -64,7 +66,9 @@ function displayResults(hero) {
 }
 
 async function findHero(event) {
-  const URL = 'https://gateway.marvel.com/v1/public/characters?ts='+ ts +'&name=' + input.value + '&apikey=' + pubkey + "&hash=" + hash
+  clearOldComics ()
+  const [hashString, ts] = hash()
+  const URL = 'https://gateway.marvel.com/v1/public/characters?ts='+ ts +'&name=' + input.value + '&apikey=' + pubkey + "&hash=" + hashString
   try {
     const response = await axios.get(URL)
     console.log(response.data.data.results[0]) 
@@ -85,17 +89,37 @@ function displayComicCollection(comicThumbnails) {
   divComics.appendChild(comicImg)
 }
 
+const allComicBtn = document.querySelector('.all-comic-btn')
 function getComicCollection(results) {
   results.slice(-4).forEach(comic => {
   displayComicCollection(`${comic.thumbnail.path}.${comic.thumbnail.extension}`)  
   }); 
+  const button = document.createElement('button')
+  button.setAttribute('id', 'more-comics')
+  button.innerText = "See Full Collection"
+  allComicBtn.appendChild(button)
+  button.addEventListener('click', () => {
+    results.slice(0, -4).forEach(comic => {
+      displayComicCollection(`${comic.thumbnail.path}.${comic.thumbnail.extension}`)
+    })
+    allComicBtn.remove()
+  })
 }
 
-const fullCollectionBtn = document.querySelector('#more-comics')
+function clearOldComics () {
+  while (divComics.firstChild) {
+    divComics.removeChild (divComics.firstChild)
+  }
+  while (allComicBtn.firstChild) {
+    allComicBtn.removeChild(allComicBtn.firstChild)
+  }
+}
 
-//added second button to show the full comic collection 
+const fullCollection = document.querySelector('#more-comics')
 
-fullCollectionBtn.addEventListener('click', (event) => {
+//added second button to show the full comic collection
+
+fullCollection.addEventListener('click', (event) => {
   findAllHeroComics()
 })
 
@@ -105,15 +129,28 @@ function getFullCollection(allComics) {
   }); 
 }
 
-
-
-async function findHeroComics(characterId) {
-  const comicURL = 'https://cors-rach.herokuapp.com/http://gateway.marvel.com/v1/public/characters/' + characterId + '/comics?ts='+ ts + '&apikey=' + pubkey + "&hash=" + hash
+async function findAllHeroComics(characterId) {
+  console.log(characterId)
+  const [hashString, ts] = hash()
+  const comicURL = 'https://cors-rach.herokuapp.com/http://gateway.marvel.com/v1/public/characters/' + characterId + '/comics?ts='+ ts + '&apikey=' + pubkey + "&hash=" + hashString
   try {
     const comicResponse = await axios.get(comicURL,{headers: {"Access-Control-Allow-Origin": "*"}})
     console.log(comicResponse.data.data.results) 
-    getComicCollection(comicResponse.data.data.results)  
+    getFullCollection(comicResponse.data.data.results)  
   } catch (err) {
     console.log(err.message)
   }
 }
+
+
+  async function findHeroComics(characterId) {
+    const [hashString, ts] = hash()
+    const comicURL = 'https://cors-rach.herokuapp.com/http://gateway.marvel.com/v1/public/characters/' + characterId + '/comics?ts=' + ts + '&apikey=' + pubkey + "&hash=" + hashString
+    try {
+      const comicResponse = await axios.get(comicURL, { headers: { "Access-Control-Allow-Origin": "*" } })
+      console.log(comicResponse.data.data.results)
+      getComicCollection(comicResponse.data.data.results)
+    } catch (err) {
+      console.log(err.message)
+    }
+  }
