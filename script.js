@@ -24,7 +24,7 @@ button.addEventListener('click', (event) => {
   findHero(event)
 })
 
-//rendering results on the page 
+//replacing old data on new search 
 
 function removeOldHero() {
   div.innerHTML = ''
@@ -34,8 +34,9 @@ function removeOldDescription() {
   divDetails.innerHTML = ''
 }
 
-const div = document.querySelector('.hero-list')
+//rendering results on the page
 
+const div = document.querySelector('.hero-list')
 
 function displayHeroPicture(thumbnail) {
   let heroThumbnail = document.createElement("img")
@@ -52,18 +53,11 @@ function displayHeroDescription(details) {
   divDetails.appendChild(heroDetails)
 }
 
-
-function displayHeroComics(heroComics) {
-  let heroComicCollection = document.createElement("h2")
-  heroComics.src = heroComics
-  div.appendChild(heroComicCollection)
-}
-
 function displayResults(hero) {
   removeOldHero()
   displayHeroPicture(`${hero.thumbnail.path}.${hero.thumbnail.extension}`)
   displayHeroDescription(`${hero.description}`)
-  displayHeroComics(`${hero.comics.collectionURI}`)  
+  // displayHeroComics(`${hero.comics.collectionURI}`)  
 }
 
 async function findHero(event) {
@@ -78,12 +72,28 @@ async function findHero(event) {
   }
 }
 
+//Displaying comic collection
+
+function displayComicCollection(comicThumbnails) {
+  let comicImg = document.createElement("img")
+  comicImg.src = comicThumbnails
+  div.appendChild(comicImg)
+}
+
+function getComicCollection(results) {
+  results.slice(-4).forEach(comic => {
+  displayComicCollection(`${comic.thumbnail.path}.${comic.thumbnail.extension}`)  
+  }); 
+}
+
+
+
 async function findHeroComics(characterId) {
   const comicURL = 'https://cors-rach.herokuapp.com/http://gateway.marvel.com/v1/public/characters/' + characterId + '/comics?ts='+ ts + '&apikey=' + pubkey + "&hash=" + hash
   try {
     const comicResponse = await axios.get(comicURL,{headers: {"Access-Control-Allow-Origin": "*"}})
-    console.log(comicResponse.data) 
-    displayHeroComics(comicResponse.data)  
+    console.log(comicResponse.data.data.results) 
+    getComicCollection(comicResponse.data.data.results)  
   } catch (err) {
     console.log(err.message)
   }
