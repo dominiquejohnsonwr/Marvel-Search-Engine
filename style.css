@@ -13,10 +13,11 @@ html {
   width: 100%;
 }
 
-body {
+html, body {
   background-image: url("./marvel-body-background.gif");
   text-align: center;
-  height: 100%;
+  min-height: 1000px;
+  width: 100%;
 }
 
 .hero-text {
@@ -85,7 +86,7 @@ h1 {
 .bottom-nav {
   background-color: #ed1d248e;
   text-align: center;
-  position: fixed;
+  position: fixed;  
   bottom: 0;
   width: 100%;
   margin: 100px 0 0 0;

@@ -30,6 +30,10 @@ function removeOldHero() {
   div.innerHTML = ''
 }
 
+function removeOldDescription() {
+  divDetails.innerHTML = ''
+}
+
 const div = document.querySelector('.hero-list')
 
 
@@ -42,23 +46,24 @@ function displayHeroPicture(thumbnail) {
 const divDetails = document.querySelector('.hero-description')
 
 function displayHeroDescription(details) {
+  removeOldDescription()
   let heroDetails = document.createElement("p")
   heroDetails.innerHTML = details
   divDetails.appendChild(heroDetails)
 }
 
 
-// function displayHeroComics(heroComics) {
-//   let heroComicCollection = document.createElement("h2")
-//   heroComics.src = heroComics
-//   div.appendChild(heroComicCollection)
-// }
+function displayHeroComics(heroComics) {
+  let heroComicCollection = document.createElement("h2")
+  heroComics.src = heroComics
+  div.appendChild(heroComicCollection)
+}
 
 function displayResults(hero) {
   removeOldHero()
   displayHeroPicture(`${hero.thumbnail.path}.${hero.thumbnail.extension}`)
   displayHeroDescription(`${hero.description}`)
-  // displayHeroComics(`${hero.comics.collectionURI}`)  
+  displayHeroComics(`${hero.comics.collectionURI}`)  
 }
 
 async function findHero(event) {
@@ -78,7 +83,7 @@ async function findHeroComics(characterId) {
   try {
     const comicResponse = await axios.get(comicURL,{headers: {"Access-Control-Allow-Origin": "*"}})
     console.log(comicResponse.data) 
-    displayResults(comicResponse.data)  
+    displayHeroComics(comicResponse.data)  
   } catch (err) {
     console.log(err.message)
   }
