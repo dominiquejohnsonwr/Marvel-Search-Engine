@@ -25,7 +25,7 @@ html, body {
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 60px;
   color: white;
   margin: 30 auto;
 }
@@ -36,7 +36,7 @@ h1 {
 
 .mainLogo img {
   display: inline-block;
-  width: 500px;
+  width: 300px;
   border: 2px solid #ffffff;
   border-radius: 5px;
 }
@@ -44,15 +44,15 @@ h1 {
 #blank {
   text-align: center;
   font-size: 22px;
-  width: 400px;
-  height: 50px;
+  width: 350px;
+  height: 45px;
   border: 2px solid #ed1d24;
-  border-radius: 3px;
-  margin: 40px auto;
+  border-radius: 5px;
+  margin: 30px auto;
 }
 
 #search {
-  font-size: 30px;
+  font-size: 35px;
   width: 150px;
   height: 45px;
   color: #ffffff;
@@ -68,54 +68,57 @@ h1 {
   margin: 0 auto;
 }
 
-.hero-list {
-  color: #ffffff;
-}
-
 .hero-list img {
   border: 5px solid #ed1d248e;
   border-radius: 5px;
   color: #ffffff;
-  height: 700px;
+  height: 500px;
   max width: 100%;
-  margin: 90px 0 50px 0;
+  margin: 50px 40px 50px 0;
 }
 
 .hero-description {
   font-size: 50px;
   color: #ffffff;
-  max-width: 1000px;
-  height: 700px;
-  margin: 90px 0 50px 40px;
+  max-width: 800px;
+  height: 500px;
+  margin: 50px 0 50px 70px;
 }
 
 .your-hero p {
   color: #ffffff;
-  font-size: 40px;
+  font-size: 35px;
   align-items: center;
 }
 
 .hero-comics {
-  margin-top: 65px;
+  margin: 10px 0 10px 0;
 }
 
 .hero-comics img {
-  padding: 25px;
-  margin:60px 0 40px 0;
+  width: 400px;
+  padding: 35px;
+  margin: 10px 0 10px 0;
   border-radius: 5px;
+}
+
+.comic-heading {
+  font-size: 60px;
 }
 
 .bottom-nav {
   background-color: #0e0e0ed2;
+  align-items: center;
   text-align: center;
   position: relative;  
+  height: 45px;
   bottom: 0;
   width: 100%;
-  margin: 20px 0 0 0;
+  margin: 90px 0 0 0;
 }
 
 .bottom-nav img {
-  border: 5px solid #ed1d248e;
-  width: 75px;
-  height: 75px;
+  border: 3px solid #ed1d248e;
+  width: 45px;
+  height: 100%;
 }
