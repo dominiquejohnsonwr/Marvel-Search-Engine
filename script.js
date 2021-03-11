@@ -62,7 +62,6 @@ function displayResults(hero) {
   removeOldHero()
   displayHeroPicture(`${hero.thumbnail.path}.${hero.thumbnail.extension}`)
   displayHeroDescription(`${hero.description}`)
-  // displayHeroComics(`${hero.comics.collectionURI}`)  
 }
 
 async function findHero(event) {
@@ -90,13 +89,18 @@ function displayComicCollection(comicThumbnails) {
 }
 
 const allComicBtn = document.querySelector('.all-comic-btn')
+const newSearch = document.querySelector('.new-search')
+
 function getComicCollection(results) {
+   //initial 4 results when search button is clicked
   results.slice(-4).forEach(comic => {
   displayComicCollection(`${comic.thumbnail.path}.${comic.thumbnail.extension}`)  
   }); 
+  
+  //Adding new button to expand comic collection 
   const button = document.createElement('button')
   button.setAttribute('id', 'more-comics')
-  button.innerText = "See Full Collection"
+  button.innerText = "See More Comics"
   allComicBtn.appendChild(button)
   button.addEventListener('click', () => {
     results.slice(0, -4).forEach(comic => {
@@ -104,6 +108,16 @@ function getComicCollection(results) {
     })
     allComicBtn.remove()
   })
+  
+  //adding new button to refresh page when function getComicCollection is run 
+  const newSearchBtn = document.createElement('button')
+  newSearchBtn.setAttribute('id', 'new-search-btn')
+  newSearchBtn.innerText = "Find Another Hero"
+  newSearch.appendChild(newSearchBtn)
+  newSearchBtn.addEventListener('click', () => {
+    window.location.reload()
+  })
+
 }
 
 function clearOldComics () {
@@ -116,14 +130,8 @@ function clearOldComics () {
 }
 
 
-const newSearch = document.querySelector('#new-search')
 
-newSearch.addEventListener('click', () => {
-  window.location.reload()
-})
-
-//added second button to show the full comic collection
-
+//Function to expand results to show 20 comics 
 const fullCollection = document.querySelector('#more-comics')
 
 function getFullCollection(allComics) {
