@@ -115,13 +115,16 @@ function clearOldComics () {
   }
 }
 
-const fullCollection = document.querySelector('#more-comics')
+
+const newSearch = document.querySelector('#new-search')
+
+newSearch.addEventListener('click', () => {
+  window.location.reload()
+})
 
 //added second button to show the full comic collection
 
-fullCollection.addEventListener('click', (event) => {
-  findAllHeroComics()
-})
+const fullCollection = document.querySelector('#more-comics')
 
 function getFullCollection(allComics) {
   results.forEach(allComics => {
