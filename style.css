@@ -36,7 +36,7 @@
   
 
   body {
-    max-width: 100%px;
+    max-width: 100%;
   }
   
   .hero-list img {
@@ -148,7 +148,6 @@ h1 {
 
 
 .comic-container {
-  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -156,6 +155,7 @@ h1 {
 .hero-comics {
   /* margin: 10px 0 0 0; */
   padding: 10px 0 10px 0;
+  max-width: 1800px;
 
 }
 

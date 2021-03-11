@@ -21,13 +21,24 @@ const heroForm = document.querySelector('#hero-form')
 heroForm.addEventListener('submit', (event) => {
   event.preventDefault()
   // console.log("input field works") -> testing form listener
+  const oldButton = document.querySelector('#new-search-btn')
+  // console.log(oldButton)
+  if (oldButton) {
+    oldButton.remove()
+  }
   findHero(event)
 })
  
-button.addEventListener('click', (event) => {
-  // console.log("button works too") -> testing button functionality 
-  findHero(event)
-})
+// button.addEventListener('click', (event) => {
+//   // console.log("button works too") -> testing button functionality 
+  
+//   const oldButton = document.querySelector('#new-search-btn')
+//   console.log(oldButton)
+//   if (oldButton) {
+//     oldButton.remove()
+//   }
+//   findHero(event)
+// })
 
 //replacing old data on new search 
 
@@ -65,7 +76,7 @@ function displayResults(hero) {
 }
 
 async function findHero(event) {
-  clearOldComics ()
+  clearOldComics()
   const [hashString, ts] = hash()
   const URL = 'https://gateway.marvel.com/v1/public/characters?ts='+ ts +'&name=' + input.value + '&apikey=' + pubkey + "&hash=" + hashString
   try {
@@ -106,7 +117,7 @@ function getComicCollection(results) {
     results.slice(0, -4).forEach(comic => {
       displayComicCollection(`${comic.thumbnail.path}.${comic.thumbnail.extension}`)
     })
-    allComicBtn.remove()
+    button.remove()
   })
   
   //adding new button to refresh page when function getComicCollection is run 
