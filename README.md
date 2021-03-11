@@ -1,10 +1,10 @@
-App Title: Marvel Character Lookup Tool
+# App Title: Marvel Character Lookup Tool
 
-App Description: An application that allows you to search and view detailed information about any character from the Marvel Comics Universe.
+### An application that allows you to search and view detailed information about any character from the Marvel Comics Universe.
 
-API: I am using the Marvel Deveoper Portal API and I plan to use character details, thumbnail images, and comic book collections for each character.
+#### API: I am using the Marvel Deveoper Portal API and I plan to use character details, thumbnail images, and comic book collections for each character.
 
-API Snippet: https://gateway.marvel.com/v1/public/characters?ts={{ts}}&name=hulk&apikey={{apikey}}&hash={{hash}}
+#### API Snippet: https://gateway.marvel.com/v1/public/characters?ts={{ts}}&name=hulk&apikey={{apikey}}&hash={{hash}}
 
 ```{
     "code": 200,
@@ -31,66 +31,69 @@ API Snippet: https://gateway.marvel.com/v1/public/characters?ts={{ts}}&name=hulk
 
 ```
 
-Wireframes: 
+### Wireframes: 
 
-Desktop view of application
+### Desktop view of application
 ![Marvel_wireframe_desktop](https://media.git.generalassemb.ly/user/34504/files/96e85d80-8003-11eb-9992-e9b4c584dc68)
 
-Mobile view of application
+### Mobile view of application
 ![Marvel_wireframe_mobile](https://media.git.generalassemb.ly/user/34504/files/99e34e00-8003-11eb-8f0f-ebb2946c7a66)
 
 
 | MVP | Goals                                                                                                                           |
 |-----|---------------------------------------------------------------------------------------------------------------------------------|
 | 1   | Project will be built fully with HTML, CSS, and JavaScript.                                                                     |
-| 2   | I will style the project layout using both flexbox and grid to display content in an organized way.                          \| |
-| 3   | I will make API requests to Marvel's official server using Axios to pull character data.                                        |
-| 4   | Project will have individual layouts for both desktop and mobile view to display search results.                                |
-| 5   | Results will include character details that shows description of character and grid of comics that the character appears in.    |
-| 6   | I will add hover effects to comics after results populate.                                                                      |                                                                  |
+| 2   | I will style the project layout using flexbox to display content in blocks shown on wireframe.                                  |
+| 3   | I will make API requests to Marvel's official server using Axios to pull character information.                                 |
+| 4   | Project will br responsive so it shows well on both desktops and mobile.                                                        |
+| 5   | Results will include character details that shows description of character and grid of comics for that character.               |
+| 6   | Return search results for first character in response.                                                                          |
+                                                                                                                                       
 
-| Post-MVP | Goals                                                                                                                                           |
+| Post-MVP | Goals                                                                                                                                           
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1        | I would like to add the ability to click each comic and display additional details like other characters who also appear in the selected comic. |
 | 2        | Add the ability to show list of movie along with movie trailers for the selected characters.                                                    |
 | 3        | Implement more design details to input fields and buttons on the page.                                                                          |
+| 4        | Add hover effects to comics after results populate.                                                                                             |
+| 5        | Add dropdown to include the extra search results for name searched.                                                                             |
 
 
-Goals:  
+#### Goals:  
 | Day            | Goal                                                                            |
 |----------------|---------------------------------------------------------------------------------|
 | Monday 3/8     | Finish README and start with HTML/CSS.                                          |
 | Tuesday 3/9    | Start working on my JavaScript and make sure all fields/buttons are functional. |
 | Wednesday 3/10 | Complete my JavaScript and make sure the application is functional.             |
 | Thursday 3/11  | Testing / tweaks to my CSS. Look into post-MVP goals.                           |
-| Friday 3/12    | Presentation Day.                                                               |
+| Friday 3/12    | Deployment!                                                                     |
 
-Priority Matrix: 
+#### Priority Matrix: 
 ![295E7CC1-92D3-4018-B0F6-44C63183749F](https://media.git.generalassemb.ly/user/34504/files/1df00280-8011-11eb-8955-9a0fcc1ab315)
 
 
-Timeframes:
+#### Timeframes:
 |            | Development Task    | Expected time | Actual time |
 |------------|---------------------|---------------|-------------|
-| Day 1      | HTML                | 2 hours       |             |
-|            | CSS                 | 2 hours       |             |
-|            | JavaScript          | 3 hours       |             |
+| Day 1      | HTML                | 2 hours       | 3 hours     |
+|            | CSS                 | 2 hours       | 2 hours     |
+|            | JavaScript          | 3 hours       | 2 hours     |
 |            |                     |               |             |
-| Day 2      | HTML                | 2 hours       |             |
-|            | JavaScript          | 3 hours       |             |
-|            | CSS                 | 2 hours       |             |
-|            | Javascript          | 3 hours       |             |
+| Day 2      | HTML                | 2 hours       | 3 hours     |
+|            | JavaScript          | 3 hours       | 3 hours     |
+|            | CSS                 | 2 hours       | 1 hour      |
+|            | Javascript          | 3 hours       | 4 hours     |
 |            |                     |               |             |
-| Day 3      | JavaScript          | 3 hours       |             |
-|            | CSS                 | 3 hours       |             |
-|            | HTML                | 1 hour        |             |
-|            | JavaScript          | 3 hours       |             |
+| Day 3      | JavaScript          | 3 hours       | 2 hours     |
+|            | CSS                 | 3 hours       | 3 hours     |
+|            | HTML                | 1 hour        | 1 hour      |
+|            | JavaScript          | 3 hours       | 3 hours     |
 |            |                     |               |             |
-| Day 4      | HTML                | 1 hour        |             |
-|            | CSS                 | 2 hours       |             |
-|            | JavaScript          | 3 hours       |             |
-|            | CSS                 | 3 hours       |             |
-|            | Testing             | 2 hours       |             |
+| Day 4      | HTML                | 1 hour        | 1 hour      |
+|            | CSS                 | 2 hours       | 3 hours     |
+|            | JavaScript          | 3 hours       | 2 hours     |
+|            | CSS                 | 3 hours       | 2 hours     |
+|            | Testing             | 2 hours       | 2 hours     |
 |            |                     |               |             |
 | Day 5      | Present application |               |             |
-| Total Time |                     | 38 hours      |             |
+| Total Time |                     | 38 hours      | 37 hours    |
