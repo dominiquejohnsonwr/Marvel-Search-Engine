@@ -75,25 +75,25 @@
 #### Timeframes:
 |            | Development Task    | Expected time | Actual time |
 |------------|---------------------|---------------|-------------|
-| Day 1      | HTML                | 2 hours       | 3           |
-|            | CSS                 | 2 hours       | 2           |
-|            | JavaScript          | 3 hours       | 2           |
+| Day 1      | HTML                | 2 hours       | 3 hours     |
+|            | CSS                 | 2 hours       | 2 hours     |
+|            | JavaScript          | 3 hours       | 2 hours     |
 |            |                     |               |             |
-| Day 2      | HTML                | 2 hours       | 3           |
-|            | JavaScript          | 3 hours       | 3           |
-|            | CSS                 | 2 hours       | 1           |
-|            | Javascript          | 3 hours       | 4           |
+| Day 2      | HTML                | 2 hours       | 3 hours     |
+|            | JavaScript          | 3 hours       | 3 hours     |
+|            | CSS                 | 2 hours       | 1 hour      |
+|            | Javascript          | 3 hours       | 4 hours     |
 |            |                     |               |             |
-| Day 3      | JavaScript          | 3 hours       | 2           |
-|            | CSS                 | 3 hours       | 3           |
-|            | HTML                | 1 hour        | 1           |
-|            | JavaScript          | 3 hours       | 3           |
+| Day 3      | JavaScript          | 3 hours       | 2 hours     |
+|            | CSS                 | 3 hours       | 3 hours     |
+|            | HTML                | 1 hour        | 1 hour      |
+|            | JavaScript          | 3 hours       | 3 hours     |
 |            |                     |               |             |
-| Day 4      | HTML                | 1 hour        | 1           |
-|            | CSS                 | 2 hours       | 3           |
-|            | JavaScript          | 3 hours       | 2           |
-|            | CSS                 | 3 hours       | 2           |
-|            | Testing             | 2 hours       | 2           |
+| Day 4      | HTML                | 1 hour        | 1 hour      |
+|            | CSS                 | 2 hours       | 3 hours     |
+|            | JavaScript          | 3 hours       | 2 hours     |
+|            | CSS                 | 3 hours       | 2 hours     |
+|            | Testing             | 2 hours       | 2 hours     |
 |            |                     |               |             |
 | Day 5      | Present application |               |             |
-| Total Time |                     | 38 hours      | 37          |
+| Total Time |                     | 38 hours      | 37 hours    |
