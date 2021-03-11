@@ -1,6 +1,6 @@
 # App Title: Marvel Super-Hero Comic Library
 
-### An application that allows you to search and view detailed information about any character from the Marvel Comics Universe.
+### An application that allows you to search and view comics for any super-hero from the Marvel Comics Universe.
 
 #### API: I am using the Marvel Deveoper Portal API and I plan to use character details, thumbnail images, and comic book collections for each character.
 
