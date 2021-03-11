@@ -29,17 +29,6 @@ heroForm.addEventListener('submit', (event) => {
   findHero(event)
 })
  
-// button.addEventListener('click', (event) => {
-//   // console.log("button works too") -> testing button functionality 
-  
-//   const oldButton = document.querySelector('#new-search-btn')
-//   console.log(oldButton)
-//   if (oldButton) {
-//     oldButton.remove()
-//   }
-//   findHero(event)
-// })
-
 //replacing old data on new search 
 
 function removeOldHero() {
