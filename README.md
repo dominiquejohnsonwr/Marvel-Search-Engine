@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 ### [MY SITE](http://marvel-comics-lookup.surge.sh/)
 
 # App Title: Marvel Character Lookup Tool
+=======
+# App Title: Marvel Super-Hero Comic Library
+>>>>>>> 60eb24c99e1eb23b0a17280d5ba51e664b6d9f7e
 
-### An application that allows you to search and view detailed information about any character from the Marvel Comics Universe.
+### An application that allows you to search and view comics for any super-hero from the Marvel Comics Universe.
 
 #### API: I am using the Marvel Deveoper Portal API and I plan to use character details, thumbnail images, and comic book collections for each character.
 
